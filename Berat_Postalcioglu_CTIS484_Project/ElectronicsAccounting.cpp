@@ -11,7 +11,8 @@ ElectronicsAccounting::ElectronicsAccounting(Electronic *argelectronic)
 
 ElectronicsAccounting::~ElectronicsAccounting()
 {
-	delete electronic, observable_util;
+	delete electronic;
+	delete observable_util
 }
 
 int ElectronicsAccounting::get_number_of_selled_electronics()
