@@ -11,7 +11,8 @@ BooksAccounting::BooksAccounting(Book *argbook)
 
 BooksAccounting::~BooksAccounting()
 {
-	delete book, observable_util;
+	delete book;
+	delete observable_util;
 }
 
 int BooksAccounting::get_number_of_selled_books()
