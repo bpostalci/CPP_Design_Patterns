@@ -11,7 +11,10 @@ Book::Book(const char* author, const char* name, const char* publisher, int numb
 
 Book::~Book()
 {
-	delete author, name, publisher, observable_util;
+	delete author;
+	delete name;
+	delete publisher;
+	delete observable_util;
 }
 
 const char* Book::get_author() const
